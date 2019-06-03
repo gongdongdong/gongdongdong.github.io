@@ -133,9 +133,9 @@ Markdown是一种纯文本格式的标记语言。通过简单的标记语法，
 
 
 
-![img](/home/monomania/Pictures/architecture_diagram.png)
+![img](https://developer.android.google.cn/images/landing/android-app-bundle-promo.svg ''from google cn'')
 
-架构
+Google CN
 
 # 六、超链接
 
@@ -287,17 +287,16 @@ title可加可不加
 单行代码
 
 ```
-`create database hero;`
+`printf("hello markdown");`
 ```
 
 代码块
 
 ```
 (```)
-    function fun(){
-         echo "这是一句非常牛逼的代码";
+    private void show(){
+    	System.out.println("You are here");
     }
-    fun();
 (```)
 ```
 
@@ -306,14 +305,13 @@ title可加可不加
 单行代码
 
 ```
-create database hero;
+printf("hello markdown");
 ```
 
 代码块
 
 ```
-function fun(){
-  echo "这是一句非常牛逼的代码";
-}
-fun();
+    private void show(){
+    	System.out.println("You are here");
+    }
 ```
