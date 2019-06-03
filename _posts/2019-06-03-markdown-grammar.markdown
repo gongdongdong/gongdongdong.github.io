@@ -126,7 +126,7 @@ Markdown是一种纯文本格式的标记语言。通过简单的标记语法，
 示例：
 
 ```
-![架构](https://github.com/gongdongdong/gongdongdong.github.io/blob/master/_posts/images/other ''architechure'')
+![架构](https://developer.android.google.cn/images/landing/android-app-bundle-promo.svg ''architechure'')
 ```
 
 效果如下：
