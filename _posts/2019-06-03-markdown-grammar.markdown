@@ -133,11 +133,9 @@ Markdown是一种纯文本格式的标记语言。通过简单的标记语法，
 
 
 
-![img](https://github.com/gongdongdong/gongdongdong.github.io/blob/master/_posts/images/other.png)
+![img](/home/monomania/Pictures/architecture_diagram.png)
 
 架构
-
-**上传本地图片直接点击导航栏的图片标志，选择图片即可**
 
 # 六、超链接
 
