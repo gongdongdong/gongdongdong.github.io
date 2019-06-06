@@ -1,0 +1,82 @@
+# MVVM demo
+
+
+## layout 文件
+```
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.learn.flavor.Formvvm.Main2ViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_check"
+            android:text="@{viewModel.btn_check_text}"
+            android:textSize="35sp"
+            android:onClick="@{()->viewModel.btn_check()}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_check"
+            android:text="@{viewModel.tv_check_text}"
+            android:textSize="35sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</layout>
+```
+
+##  Activity 文件
+
+```
+public class Main2Activity extends AppCompatActivity {
+    // ViewModel
+    private Main2ViewModel mViewModel;
+
+    // DataBinding
+    private ActivityMain2Binding mDataBinding;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_main2);
+        mDataBinding = DataBindingUtil.setContentView(this, R.layout.activity_main2);
+        // 创建ViewModel
+        mViewModel = new Main2ViewModel();
+        // 绑定View和ViewModel
+        mDataBinding.setViewModel(mViewModel);
+    }
+}
+```
+
+## ViewModel 
+
+```
+public class Main2ViewModel {
+
+    public final ObservableField<String> btn_check_text = new ObservableField<>();
+    public final ObservableField<String> tv_check_text = new ObservableField<>();
+    public void btn_check(){
+        btn_check_text.set("onclick");
+        tv_check_text.set("saying hello");
+    }
+
+    public Main2ViewModel(){
+        btn_check_text.set("initial");
+        tv_check_text.set("initial");
+    }
+}
+```
+
+如上是MVVM的hello world。
+如果想要对MVVM有更加深入的了解，建议去看google的Tododemo
+
+[Todo App](https://github.com/googlesamples/android-architecture)
