@@ -8,7 +8,7 @@
 
 上图：
 
-![流程图](http://assets.processon.com/chart_image/5d0d930ae4b0d13de7dd11ea.png'测试')
+![流程图](http://assets.processon.com/chart_image/5d0d930ae4b0d13de7dd11ea.png)
 
 
 
